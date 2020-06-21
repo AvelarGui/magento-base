@@ -33,5 +33,11 @@
 /pub/static/*
 !/pub/static/.htaccess
 
+/var/*
+!/var/.htaccess
+/generated/*
+!/generated/.htaccess
+.DS_Store
+
 .DS_Store
 sftp-config.json
