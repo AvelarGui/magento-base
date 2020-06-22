@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+        <payment>
+            <moipbase>
+                <title>Config Moip</title>
+                <model>Moip\Magento2\Model\PaymentMethodCc</model>
+                <environment_mode>production</environment_mode>
+                <advanced>
+                    <title>Config Avançada</title>
+                    <type_cpf>address</type_cpf>
+                    <cpf_for_address>vat_id</cpf_for_address>
+                    <cpf_for_customer>taxvat</cpf_for_customer>
+                    <type_cnpj>use_cpf</type_cnpj>
+                    <cnpj_for_address>vat_id</cnpj_for_address>
+                    <cnpj_for_customer>taxvat</cnpj_for_customer>
+                    <type_name_company>address</type_name_company>
+                    <company_name_address>company</company_name_address>
+                    <company_name_customer>firstname</company_name_customer>
+                    <street_logradouro>0</street_logradouro>
+                    <street_number>1</street_number>
+                    <street_complemento>3</street_complemento>
+                    <street_district>2</street_district>
+                </advanced>
+                <split>
+                    <active>0</active>
+                </split>
+            </moipbase>
+            <moipcc>
+                <model>Moip\Magento2\Model\PaymentMethodCc</model>
+				<payment_action>order</payment_action>
+                <order_status>payment_review</order_status>
+                <active>1</active>
+                <title>Cartão de Crédito</title>
+                <installment>
+                    <type_interest>simple</type_interest>
+                    <min_installment>5</min_installment>
+                    <max_installment>12</max_installment>
+                    <installment_1>0</installment_1>
+                    <installment_2>4.50</installment_2>
+                    <installment_3>5.00</installment_3>
+                    <installment_4>5.50</installment_4>
+                    <installment_5>6.50</installment_5>
+                    <installment_6>7.50</installment_6>
+                    <installment_7>8.50</installment_7>
+                    <installment_8>9.50</installment_8>
+                    <installment_9>10.50</installment_9>
+                    <installment_10>11.50</installment_10>
+                    <installment_11>12.00</installment_11>
+                    <installment_12>12.50</installment_12>
+                </installment>
+                <document>
+                    <getdocument>0</getdocument>
+                </document>
+            </moipcc>
+            <moipboleto>
+                <model>Moip\Magento2\Model\PaymentMethodBoleto</model>
+                <payment_action>order</payment_action>
+                <order_status>payment_review</order_status>
+                <active>1</active>
+                <title>Boleto Bancário</title>
+                <expiration>3</expiration>
+                <instrucao1>Não receber após vencimento</instrucao1>
+                <instrucao2>Não pagar em cheque</instrucao2>
+                <instrucao3>Mais info em nosso site</instrucao3>
+                <instruction><![CDATA[
+                    Pagar o boleto em qualquer casa lotérica.
+                    O boleto não será enviado ao seu endereço.
+                    Não parcelamos no boleto.
+                ]]></instruction>
+            </moipboleto>
+        </payment>
+    </default>
+</config>

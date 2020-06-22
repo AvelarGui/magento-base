@@ -2860,6 +2860,48 @@
         ]
     },
     {
+        "name": "imaginationmedia/correios",
+        "version": "1.2.5",
+        "version_normalized": "1.2.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://bitbucket.org/imagination-media/correios.git",
+            "reference": "8c31a96d4ef69475e694c5f272779318d6b85690"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://bitbucket.org/imagination-media/correios/get/8c31a96d4ef69475e694c5f272779318d6b85690.zip",
+            "reference": "8c31a96d4ef69475e694c5f272779318d6b85690",
+            "shasum": ""
+        },
+        "time": "2019-05-10T18:36:39+00:00",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "ImaginationMedia\\Correios\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0",
+            "AFL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Igor Ludgero Miura",
+                "email": "igor@imaginationmedia.com",
+                "homepage": "http://www.imaginationmedia.com.br/",
+                "role": "Developer"
+            }
+        ],
+        "description": "Correios shipping method integration for Magento 2.x",
+        "homepage": "https://bitbucket.org/imagination-media/correios"
+    },
+    {
         "name": "jms/metadata",
         "version": "1.7.0",
         "version_normalized": "1.7.0.0",
@@ -15973,6 +16015,58 @@
         ]
     },
     {
+        "name": "mercadopago/magento2-plugin",
+        "version": "3.3.8",
+        "version_normalized": "3.3.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mercadopago/cart-magento2.git",
+            "reference": "12776019e163c61c17f24a51a8eb87e6534e65b4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mercadopago/cart-magento2/zipball/12776019e163c61c17f24a51a8eb87e6534e65b4",
+            "reference": "12776019e163c61c17f24a51a8eb87e6534e65b4",
+            "shasum": ""
+        },
+        "require": {
+            "magento/magento-composer-installer": "*"
+        },
+        "require-dev": {
+            "fabpot/php-cs-fixer": "~1.2",
+            "lusitanian/oauth": "~0.3 <=0.7.0",
+            "magento/product-community-edition": "2.*",
+            "pdepend/pdepend": "2.2.2",
+            "phpmd/phpmd": "@stable",
+            "phpunit/phpunit": "4.1.0",
+            "sjparkinson/static-review": "~4.1",
+            "squizlabs/php_codesniffer": "1.5.3"
+        },
+        "time": "2020-04-14T23:15:30+00:00",
+        "type": "magento2-component",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MercadoPago\\Core\\": "src/MercadoPago/Core"
+            },
+            "files": [
+                "src/MercadoPago/Core/registration.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0",
+            "AFL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Mercado Pago",
+                "email": "info@mercadopago.com"
+            }
+        ],
+        "description": "Mercado Pago Magento 2 Plugin"
+    },
+    {
         "name": "mikey179/vfsstream",
         "version": "v1.6.8",
         "version_normalized": "1.6.8.0",
@@ -16019,6 +16113,118 @@
         ],
         "description": "Virtual file system to mock the real file system in unit tests.",
         "homepage": "http://vfs.bovigo.org/"
+    },
+    {
+        "name": "moip/magento2",
+        "version": "1.0.34",
+        "version_normalized": "1.0.34.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wirecardBrasil/magento2.git",
+            "reference": "8dbb61b7adfb89bb62790cb1f1a4834773b97c5f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wirecardBrasil/magento2/zipball/8dbb61b7adfb89bb62790cb1f1a4834773b97c5f",
+            "reference": "8dbb61b7adfb89bb62790cb1f1a4834773b97c5f",
+            "shasum": ""
+        },
+        "require": {
+            "magento/product-community-edition": ">=2.3.0",
+            "moip/moip-sdk-php": "v3.1.0",
+            "php": ">=7.0"
+        },
+        "time": "2020-06-18T14:16:06+00:00",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "Moip\\Magento2\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "proprietary"
+        ],
+        "description": "MOIP Magento2 Extension for Magento 2 By Moip"
+    },
+    {
+        "name": "moip/moip-sdk-php",
+        "version": "v3.1.0",
+        "version_normalized": "3.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/moip/moip-sdk-php.git",
+            "reference": "c32c90218aa6f2fa85bbefa260c1e457fc80a448"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/moip/moip-sdk-php/zipball/c32c90218aa6f2fa85bbefa260c1e457fc80a448",
+            "reference": "c32c90218aa6f2fa85bbefa260c1e457fc80a448",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5",
+            "rmccue/requests": ">=1.0"
+        },
+        "require-dev": {
+            "codacy/coverage": "dev-master",
+            "phpunit/phpunit": "~4.8.35 || ^5.7 || ^6.4"
+        },
+        "time": "2018-01-29T13:31:39+00:00",
+        "type": "libraries",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Moip\\": "src/"
+            },
+            "files": [
+                "src/Helper/helpers.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jean Cesar Garcia",
+                "email": "jeancesargarcia@gmail.com"
+            },
+            {
+                "name": "João Batista Neto",
+                "email": "neto.joaobatista@gmail.com"
+            },
+            {
+                "name": "Caio Gaspar",
+                "email": "caio.gaspar@moip.com.br"
+            },
+            {
+                "name": "João Lucas Lucchetta",
+                "email": "joao.lucchetta@moip.com.br"
+            },
+            {
+                "name": "Matheus Nakaya",
+                "email": "matheus.nakaya@moip.com.br"
+            }
+        ],
+        "description": "Cliente em PHP para integração server-side com APIs Moip v2",
+        "homepage": "http://dev.moip.com.br",
+        "keywords": [
+            "checkout",
+            "intermediary",
+            "libraries",
+            "marketplace",
+            "moip"
+        ]
     },
     {
         "name": "monolog/monolog",
@@ -18467,6 +18673,57 @@
         "keywords": [
             "promise",
             "promises"
+        ]
+    },
+    {
+        "name": "rmccue/requests",
+        "version": "v1.7.0",
+        "version_normalized": "1.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/rmccue/Requests.git",
+            "reference": "87932f52ffad70504d93f04f15690cf16a089546"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/rmccue/Requests/zipball/87932f52ffad70504d93f04f15690cf16a089546",
+            "reference": "87932f52ffad70504d93f04f15690cf16a089546",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "require-dev": {
+            "requests/test-server": "dev-master"
+        },
+        "time": "2016-10-13T00:11:37+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Requests": "library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "ISC"
+        ],
+        "authors": [
+            {
+                "name": "Ryan McCue",
+                "homepage": "http://ryanmccue.info"
+            }
+        ],
+        "description": "A HTTP library written in PHP, for human beings.",
+        "homepage": "http://github.com/rmccue/Requests",
+        "keywords": [
+            "curl",
+            "fsockopen",
+            "http",
+            "idna",
+            "ipv6",
+            "iri",
+            "sockets"
         ]
     },
     {

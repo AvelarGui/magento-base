@@ -283,3 +283,5 @@
 [2020-06-21 20:14:47] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_reviews_external was processed [] []
 [2020-06-21 20:14:47] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_analytics_external was processed [] []
 [2020-06-21 20:15:59] main.ERROR: Unable to send mail: Unknown error [] []
+[2020-06-22 02:26:08] main.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.core_config_data' doesn't exist, query was: SELECT `main_table`.* FROM `core_config_data` AS `main_table` [] []
+[2020-06-22 02:26:21] main.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.core_config_data' doesn't exist, query was: SELECT `main_table`.* FROM `core_config_data` AS `main_table` [] []
