@@ -1,1 +1,0 @@
-/var/www/html/magento/app/code/Roeder/Pagarme/view/frontend/web/js/view/payment/pagarme-methods.js
