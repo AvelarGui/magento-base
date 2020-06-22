@@ -27,6 +27,11 @@ footer.login-footer{
 
 .notices-wrapper{ display: none;}
 
+
+.adminhtml-dashboard-index .page-main-actions{
+    display: none;
+}
+
 /*button primary*/
 .action-primary,
 .abs-action-primary,

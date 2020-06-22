@@ -9,6 +9,7 @@
             <label>Cores da Loja</label>
             <tab>visual</tab>
             <resource>Epicom_AdminColors::colors_configuration</resource>
+           
             <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Cores Predominantes</label>
                 <field id="primaryColor" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -17,12 +18,56 @@
                     <comment>A cor principal é a cor predominante no seu tema, ela sera aplicada nas áreas de destaque como títulos, links, preços, tags, ícones e botões principais.</comment>
                 </field>
                 
-                <field id="secondaryColor" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="secondaryColor" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Escolha a cor secundária da sua loja</label>
                     <frontend_model>Epicom\AdminColors\Block\Color</frontend_model>
                     <comment>A cor principal é a cor predominante no seu tema, ela sera aplicada nas áreas de destaque como títulos, links, preços, tags, ícones e botões principais.</comment>
                 </field>
             </group>
+
+
+            <group id="header" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Cabeçalho</label>
+                <field id="headerBackground" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Cor do caceçalho</label>
+                    <frontend_model>Epicom\AdminColors\Block\Color</frontend_model>
+                </field>
+                
+                <field id="headerColor" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Cor do texto do cabeçalho</label>
+                    <frontend_model>Epicom\AdminColors\Block\Color</frontend_model>
+                </field>
+            </group>
+
+            <group id="nav" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Menu Principal</label>
+                <field id="navBackground" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Cor do menu</label>
+                    <frontend_model>Epicom\AdminColors\Block\Color</frontend_model>
+                </field>
+                
+                <field id="navColor" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Cor do texto do menu</label>
+                    <frontend_model>Epicom\AdminColors\Block\Color</frontend_model>
+                </field>
+            </group>
+
+
+            <group id="footer" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Rodapé</label>
+                <field id="footerBackground" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Cor do rodapé</label>
+                    <frontend_model>Epicom\AdminColors\Block\Color</frontend_model>
+                </field>
+                
+                <field id="footerColor" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Cor do texto do rodapé</label>
+                    <frontend_model>Epicom\AdminColors\Block\Color</frontend_model>
+                </field>
+            </group>
+
+
+
         </section>
     </system>
 </config>

@@ -3,9 +3,21 @@
     <default>
         <admincolors>
             <general>
-                <enable>1</enable>
-                <display_text>Hello World</display_text>
+                <primaryColor>#c32d60</primaryColor>
+                <secondaryColor>#231b32</secondaryColor>
             </general>
+            <header>
+            	<headerBackground>#fff</headerBackground>
+            	<headerColor>#000</headerColor>
+            </header>
+            <nav>
+            	<navBackground>#f0f0f0</navBackground>
+            	<navColor>#575757</navColor>
+            </nav>
+            <footer>
+            	<footerBackground>#f4f4f4</footerBackground>
+            	<footerColor>#fff</footerColor>
+            </footer>
         </admincolors>
     </default>
 </config>
