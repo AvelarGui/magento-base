@@ -51,7 +51,7 @@ class Config extends \Magento\Framework\App\Action\Action
 		//$style .= ".page-header{ background:".$headerColor."; }" ;
 		$style .= " .minicart-wrapper .action.showcart .counter.qty{ background:".$secondaryColor."; } ";
 		$style .= ".minicart-wrapper .action.showcart:before, .minicart-wrapper .action.showcart:hover:before{ font-size: 30px; margin-top: 3px; color:".$headerColor." }";
-		$style .= ".block-search input{border:none}";
+		$style .= ".block-search input{border:1px solid #f1f1f1;}";
 
 
 		// Menu
