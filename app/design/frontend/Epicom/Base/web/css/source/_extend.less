@@ -8,6 +8,17 @@ select, input[type="text"], input[type="password"], input[type="url"], input[typ
 }
 
 // Header
+.page-header .panel.wrapper{
+    border: none;
+    background-color: rgba(0,0,0,0.1);
+    color: #000;
+}
+.header.panel>.header.links, .customer-welcome .action.switch, .header.panel>.header.links>li>a, .header.panel>.header.links>li>a:visited,.header.panel>.header.links>li>a:hover{
+    color: #000;
+}
+.header.panel>.header.links>li>a, .header.panel>.header.links>li>a:visited,.header.panel>.header.links>li>a:hover{
+    font-weight: 700;
+}
 .checkout-index-index .page-header {
     border-bottom: 1px solid #cccccc !important;
     margin-bottom: 20px !important;
@@ -33,7 +44,8 @@ select, input[type="text"], input[type="password"], input[type="url"], input[typ
 }
 .navigation .level0.active > .level-top, .navigation .level0.has-active > .level-top,
 .block-collapsible-nav .item.current a, .block-collapsible-nav .item.current>strong{
-	border-color: #c32d60;
+	border:none;
+    background: rgba(0,0,0,0.08);
 }
 
 // Banner Slider Home
@@ -41,16 +53,18 @@ select, input[type="text"], input[type="password"], input[type="url"], input[typ
 
 
 // Buttons
-// .action{
-// 	&.primary{
-// 		background-color: #231b32;
-// 		border-color: #231b32; 
-// 		&:hover, &:active, &:focus{
-// 			background: #130e1b; 
-// 			border: 1px solid #130e1b; 
-// 		}
-// 	}
-// }
+.action{
+	&.primary{
+		background-color: #231b32;
+		border-color: #231b32; 
+		&:hover, &:active, &:focus{
+			background: #130e1b; 
+			border: 1px solid #130e1b; 
+		}
+	}
+}
+
+
 
 // Product View
 .fotorama__thumb-border{

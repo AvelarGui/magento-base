@@ -29,9 +29,55 @@ class Config extends \Magento\Framework\App\Action\Action
 
 		header('Content-Type: text/css');
 
-		$color = $this->helperData->getGeneralConfig('primaryColor');
+		$primaryColor = $this->helperData->getGeneralConfig('general/primaryColor');
+		$secondaryColor = $this->helperData->getGeneralConfig('general/secondaryColor');
+		
+		$headerBackground = $this->helperData->getGeneralConfig('header/headerBackground');
+		$headerColor = $this->helperData->getGeneralConfig('header/headerColor');
 
-		echo '.page-header{background: '.$color.' !important;}' ;
+		$navBackground = $this->helperData->getGeneralConfig('nav/navBackground');
+		$navColor = $this->helperData->getGeneralConfig('nav/navColor');
+
+		$footerBackground = $this->helperData->getGeneralConfig('footer/footerBackground');
+		$footerColor = $this->helperData->getGeneralConfig('footer/footerColor');
+
+
+		$style = "";
+
+
+		// Header
+		$style .= ".page-header{ background:".$headerBackground."; }" ;
+		$style .= ".header.panel>.header.links, .customer-welcome .action.switch, .header.panel>.header.links>li.welcome, .header.panel>.header.links>li>a, .header.panel>.header.links>li>a:visited,.header.panel>.header.links>li>a:hover{ color: ".$headerColor." !important; }";
+		//$style .= ".page-header{ background:".$headerColor."; }" ;
+		$style .= " .minicart-wrapper .action.showcart .counter.qty{ background:".$secondaryColor."; } ";
+		$style .= ".minicart-wrapper .action.showcart:before, .minicart-wrapper .action.showcart:hover:before{ font-size: 30px; margin-top: 3px; color:".$headerColor." }";
+		$style .= ".block-search input{border:none}";
+
+
+		// Menu
+		$style .= ".nav-sections, .navigation{ background:".$navBackground."; }";
+		$style .= ".navigation .level0>.level-top, .navigation .level0.active>.level-top, .navigation .level0.has-active>.level-top, .navigation .level0 > .level-top:hover, .navigation .level0 > .level-top.ui-state-focus{ color:".$navColor." }";
+
+		// Buttons
+		$style .= ".action.primary{ background:".$primaryColor."; border-color:".$primaryColor."; }";
+		$style .= ".action.primary:hover, .action.primary:active, .action.primary:focus{ background:".$primaryColor."; border:1px solid ".$primaryColor."; }";
+
+		// Product View
+		$style .= ".fotorama__thumb-border{ border: 1px solid ".$primaryColor."; }";
+
+		// Checkout
+		$style .= ".opc-progress-bar-item._active:before,.opc-progress-bar-item._active>span:before{ background:".$primaryColor.";  border-color:".$primaryColor."; }";
+		$style .= ".opc-progress-bar-item._active>span:after{ border-color: ".$primaryColor.";}";
+		$style .= ".opc-wrapper .shipping-address-item.selected-item { border-color:".$primaryColor.";}";
+		$style .= ".opc-wrapper .shipping-address-item.selected-item:after {  background:".$primaryColor."; }";
+
+		// Footer
+		$style .= ".page-footer{ background:".$footerBackground." }";
+		$style .= ".copyright{ background:".$footerBackground."; color: ".$footerColor.";  border-top: 1px solid rgba(255,255,255,0.1); }";
+		$style .= ".footer.content .links a, .footer.content .links a:hover, .footer.content .links a:visited{ color:".$footerColor."; }";
+		$style .= ".block.newsletter input { margin-right: 35px;  padding: 0 0 0 35px;  border-radius: 0px !important;  border: none;  height: 32px !important;}";
+
+		echo $style;
 
 		exit();
 
