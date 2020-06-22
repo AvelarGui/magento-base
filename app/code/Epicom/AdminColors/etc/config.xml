@@ -16,7 +16,7 @@
             </nav>
             <footer>
             	<footerBackground>#f4f4f4</footerBackground>
-            	<footerColor>#fff</footerColor>
+            	<footerColor>#000</footerColor>
             </footer>
         </admincolors>
     </default>

@@ -47,7 +47,7 @@ class Config extends \Magento\Framework\App\Action\Action
 
 		// Header
 		$style .= ".page-header{ background:".$headerBackground."; }" ;
-		$style .= ".header.panel>.header.links, .header.panel>.header.links>li.welcome, .header.panel>.header.links>li>a, .header.panel>.header.links>li>a:visited,.header.panel>.header.links>li>a:hover{ color: ".$headerColor." !important; }";
+		$style .= ".header.panel>.header.links, .customer-welcome .action.switch, .header.panel>.header.links>li.welcome, .header.panel>.header.links>li>a, .header.panel>.header.links>li>a:visited,.header.panel>.header.links>li>a:hover{ color: ".$headerColor." !important; }";
 		//$style .= ".page-header{ background:".$headerColor."; }" ;
 		$style .= " .minicart-wrapper .action.showcart .counter.qty{ background:".$secondaryColor."; } ";
 
